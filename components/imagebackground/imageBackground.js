@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   textContainer:{
     marginTop:50,
     fontWeight:'900',
-    backgroundColor:'#04D2D6',
+    backgroundColor:'#17F5F9',
     borderRadius:20,
     width:'80%',
     alignSelf:'center'

@@ -12,7 +12,7 @@ function ButonGit() {
         <View style={[{ width: "20%", margin: 10, borderColor:'transparent', alignSelf:'center', padding:10, borderRadius:30,}]}>
           <Button
             title="Cities"
-            color="#04D2D6" 
+            color="#17F5F9" 
             borderRadius={30}
           />
         </View>
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     margin: 20,
+    alignSelf:'center',
   },
   containerDos: {
     display: 'flex',

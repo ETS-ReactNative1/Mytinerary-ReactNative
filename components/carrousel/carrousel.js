@@ -1,17 +1,18 @@
 import React from 'react';
 import { Text, Dimensions, StyleSheet, ImageBackground, View } from 'react-native';
 import { SwiperFlatList } from 'react-native-swiper-flatlist';
-import cities from './dates';
+import Cities from './dates';
 
 const Carr = () => (
-  <View style={styles.container}>
-    
-    <SwiperFlatList autoplay autoplayDelay={2} autoplayLoop index={2} showPagination>
-       
-      <View style={[styles.child, { backgroundColor: 'tomato' }]}>
-        <Text style={styles.text}>1</Text>
-      </View>
-       
+  <View style={styles.container}>   
+    <SwiperFlatList autoplay autoplayDelay={4} autoplayLoop index={2} showPagination>
+      {Cities.map((city) => (
+        <ImageBackground key={city._id} source={{ uri: city.image }} style={styles.imagedos} >
+          <View  style={[styles.child,]}>
+            <Text style={styles.text}>{city.name}</Text>
+          </View>
+        </ImageBackground>
+      ))}
     </SwiperFlatList>
     
   </View>
@@ -20,9 +21,16 @@ const Carr = () => (
 const { width } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: 'white' },
-  child: { width, justifyContent: 'center' },
-  text: { fontSize: width * 0.5, textAlign: 'center' },
+  container: {
+    flex: 1,
+    height: 400,
+    width: "100%",
+  },
+  child: { width, justifyContent: "center" },
+  text: { textAlign: "center", fontSize: 30, backgroundColor: "#fff" },
+  imagedos: {
+    height: "100%",
+  },
 });
 
 export default Carr;

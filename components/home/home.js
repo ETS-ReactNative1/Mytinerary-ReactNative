@@ -5,6 +5,8 @@ import Carr from '../carrousel/carrousel';
 import React from 'react'
 import Hero from '../imagebackground/imageBackground';
 import ButonGit from '../imagebackground/buton';
+import Footer from '../carrousel/footer';
+
 
 function Home(){
   return(
@@ -14,6 +16,7 @@ function Home(){
       <Hero />
       <ButonGit/>
       <Carr/>
+      <Footer/>
     </ScrollView>
   )
 }
