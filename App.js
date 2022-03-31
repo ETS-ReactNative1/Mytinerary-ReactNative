@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, Image, Button } from 'react-native';
 /* import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes'; */
 import React, { useEffect, useState}  from 'react';
-import Home from './components/home/home';
+import Home from './src/Screens/home';
 import * as Font from 'expo-font';
 
 export default function App() {

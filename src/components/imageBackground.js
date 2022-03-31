@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, ScrollView, ImageBackground, Button } from 'react-native';
-import Navbar from '../navbar/navbar';
+import Navbar from './navbar';
 
 function Hero() {
   return (

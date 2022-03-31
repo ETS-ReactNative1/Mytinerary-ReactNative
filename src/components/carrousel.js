@@ -7,9 +7,9 @@ const Carr = () => (
   <View style={styles.container}>   
     <SwiperFlatList autoplay autoplayDelay={4} autoplayLoop index={2} showPagination>
       {Cities.map((city) => (
-        <ImageBackground key={city._id} source={{ uri: city.image }} style={styles.imagedos} >
+        <ImageBackground key={city.id} source={{ uri: city?.image }} style={styles.imagedos} >
           <View  style={[styles.child,]}>
-            <Text style={styles.text}>{city.name}</Text>
+            <Text style={styles.text}>{city?.name}</Text>
           </View>
         </ImageBackground>
       ))}
