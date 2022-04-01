@@ -1,33 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, Image, Button } from 'react-native';
-/* import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes'; */
-import React, { useEffect, useState}  from 'react';
-import Home from './src/Screens/home';
+import React from 'react';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
+import mainReducer from './redux/reducers/mainReducer';
+import { NavigationContainer } from '@react-navigation/native';
+import DrawerNavigator from './src/Navigation/Drawer';
 
-import { useFonts, Caveat_400Regular, Caveat_700Bold } from '@expo-google-fonts/caveat';
+
+
 
 
 export default function App() {
-    let [fontsLoaded, error] = useFonts({
-      Caveat_400Regular,
-      Caveat_700Bold
-    })
+  const reduxStore = createStore(mainReducer, applyMiddleware(thunk))
 
-    
-    
   return (
-    <ScrollView style={{ height: '100%', width: '100%', flex: 1, flexDirection: 'column' }}>
-      <StatusBar style="auto" backgroundColor='#17F5F9' />
-      <Home style={styles.fontFamily}/>
-
-      
-
-    </ScrollView>
+    <Provider store={reduxStore} style={{ height: '100%', width: '100%', flex: 1, flexDirection: 'column' }}>
+      <NavigationContainer>        
+          <StatusBar style="auto" backgroundColor='#17F5F9' />          
+          <DrawerNavigator/>        
+      </NavigationContainer>
+    </Provider>
   );
 }
 
-const styles = StyleSheet.create({
-  fontFamily: {
-    fontFamily:'Caveat_400Regular'
-  }
-});
+
+

@@ -6,27 +6,31 @@ function Navbar(){
   return(
     <View style={styles.navContainer}>
       <View style={styles.nav}>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           activeOpacity={0.6}
           underlayColor='#DDDDDD'
-          onPress={() => alert('welcome')}
+          onPress={() => alert('Welcome')}
         >
         <Text style={{ fontSize: 20, marginRight: 10, marginTop: 15 }}>Home </Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
-        <TouchableOpacity
+        {/* <TouchableOpacity
           activeOpacity={0.3}
           underlayColor='#DDDDDD'
           onPress={() => alert('Go to cities')}
         >
         <Text style={{ fontSize: 20, marginRight: 20, marginTop: 15 }}> Cities</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
+        <TouchableOpacity
+          activeOpacity={0.3}
+          underlayColor='#DDDDDD'
+          onPress={() => alert('Welcome')}>
         <Icon
           name='user'
           color='#000'
           size={30}
         />
-        
+      </TouchableOpacity>
       </View>
     </View>
   )

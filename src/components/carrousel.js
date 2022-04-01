@@ -5,7 +5,7 @@ import Cities from './dates';
 
 const Carr = () => (
   <View style={styles.container}>   
-    <SwiperFlatList autoplay autoplayDelay={4} autoplayLoop index={2} showPagination>
+    <SwiperFlatList autoplay autoplayDelay={4} autoplayLoop index={2}>
       {Cities.map((city) => (
         <ImageBackground key={city.id} source={{ uri: city?.image }} style={styles.imagedos} >
           <View  style={[styles.child,]}>

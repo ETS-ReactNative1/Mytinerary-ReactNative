@@ -8,15 +8,23 @@ import ButonGit from '../components/buton';
 import Footer from '../components/footer';
 
 
-function Home(){
-  return(
+function Home({ navigation }) {
+  return (
     <ScrollView>
-      
+
       {/* <Navbar/> */}
       <Hero />
-      <ButonGit/>
-      <Carr/>
-      <Footer/>
+
+      <ButonGit />
+      <View style={[{ width: "20%", alignSelf: 'center', backgroundColor: 'white', marginVertical: 10, }]}>
+        <Button
+          onPress={() => navigation.navigate('Cities')}
+          title="Cities"
+          color="#17F5F9"
+        />
+      </View>
+      <Carr />
+      <Footer />
     </ScrollView>
   )
 }

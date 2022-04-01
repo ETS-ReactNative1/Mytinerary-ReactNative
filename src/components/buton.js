@@ -9,13 +9,13 @@ function ButonGit() {
           source={require('../../assets/images/world.gif')}
           style={styles.image}
         />
-        <View style={[{ width: "20%", margin: 10, borderColor:'transparent', alignSelf:'center', padding:10, borderRadius:30,}]}>
+        {/* <View style={[{ width: "20%", alignSelf:'center', backgroundColor:'transparent'}]}>
           <Button
+            onPress={() => navigation.navigate('Cities')}
             title="Cities"
             color="#17F5F9" 
-            borderRadius={30}
           />
-        </View>
+        </View> */}
       </View>
     </View>
   )
@@ -24,8 +24,7 @@ function ButonGit() {
 const styles = StyleSheet.create({
   image: {
     width: '100%',
-    margin: 20,
-    alignSelf:'center',
+    alignSelf:'center', 
   },
   containerDos: {
     display: 'flex',
