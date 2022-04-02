@@ -9,13 +9,6 @@ function ButonGit() {
           source={require('../../assets/images/world.gif')}
           style={styles.image}
         />
-        {/* <View style={[{ width: "20%", alignSelf:'center', backgroundColor:'transparent'}]}>
-          <Button
-            onPress={() => navigation.navigate('Cities')}
-            title="Cities"
-            color="#17F5F9" 
-          />
-        </View> */}
       </View>
     </View>
   )

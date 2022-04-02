@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     padding:10,
     textAlign: 'center',
     color:'#000',
+    fontFamily:'serif',
   },
   image: {
     height: '100%'

@@ -21,6 +21,7 @@ function Home({ navigation }) {
           onPress={() => navigation.navigate('Cities')}
           title="Cities"
           color="#17F5F9"
+          fontFamily='serif'
         />
       </View>
       <Carr />

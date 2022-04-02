@@ -27,9 +27,11 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   child: { width, justifyContent: "center" },
-  text: { textAlign: "center", fontSize: 30, backgroundColor: "#fff" },
+  text: { textAlign: "center", fontSize: 30, backgroundColor: "#17F5F970", fontFamily:'serif', fontWeight:'bold' },
   imagedos: {
     height: "100%",
+    fontFamily: 'serif',
+    borderRadius:20,
   },
 });
 

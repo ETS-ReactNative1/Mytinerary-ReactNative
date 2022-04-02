@@ -1,5 +1,5 @@
 import react from "react";
-import { StyleSheet, View, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Image, TouchableOpacity, Text } from 'react-native';
 
 function Footer() {
   return (
@@ -14,6 +14,7 @@ function Footer() {
             source={require('../../assets/icon.png')}
             style={styles.image}
           />
+          <Text style={styles.nameFooter}>Juan Sebastian Londoño</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -40,6 +41,11 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     alignSelf: 'center',
+  },
+  nameFooter:{
+    fontFamily: 'serif',
+    fontSize:20,
+    fontWeight:'bold'
   }
 });
 
