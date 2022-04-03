@@ -33,20 +33,20 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
   },
-  textContainer:{
-    marginTop:50,
-    fontWeight:'900',
-    backgroundColor:'#17F5F9',
-    borderRadius:20,
-    width:'80%',
-    alignSelf:'center'
-  },  
+  textContainer: {
+    marginTop: 50,
+    fontWeight: '900',
+    backgroundColor: '#17F5F9',
+    borderRadius: 20,
+    width: '80%',
+    alignSelf: 'center'
+  },
   text: {
     fontSize: 20,
-    padding:10,
+    padding: 10,
     textAlign: 'center',
-    color:'#000',
-    fontFamily:'serif',
+    color: '#000',
+    fontFamily: 'serif',
   },
   image: {
     height: '100%'
